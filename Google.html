@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        .font {
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+        /* CSS for centering the image */
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right-align {
+            text-align: right;
+        }
+        /* Remove underline and change color */
+        .nocolor {
+            text-decoration: none; /* Remove underline */
+            color: black; /* Change link color */
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        /* Hover effect */
+        .nocolor:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+        .colored-zone {
+            padding: 15px;
+            width: 100%;
+            border-bottom: 1px solid #ccc; /* Add a border for separation */
+        }
+        .top-zone {
+            background-color: #f2f2f2;
+            width: 100%;
+        }
+        .bottom-zone {
+            background-color: #f2f2f2;
+            width: 100%;
+        }
+        .fixed-bottom {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .second-footer-row a {
+            padding: 0px 15px;
+        }
+        .second-footer-row > div {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .second-footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .first-footer-row {
+            padding: 15px 30px;
+        }
+        .svg-button-app {
+            display: inline-block;
+            padding: 10px;
+            width: 15px;
+            height: 15px;
+            transition: background-image 0.3s ease; /* Add transition effect for smooth change */
+            background-image: url('App.svg'); /* Set default SVG image */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .svg-button-app:hover {
+            background-image: url('App-Selected.svg'); /* Set SVG image for hover state */
+            width: 15px;
+            height: 15px;
+        }
+        .svg-button-account {
+            display: inline-block;
+            padding: 10px;
+            width: 15px;
+            height: 15px;
+            transition: background-image 0.3s ease; /* Add transition effect for smooth change */
+            background-image: url('Account.svg'); /* Set default SVG image */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .svg-button-account:hover {
+            background-image: url('Account-selected.svg'); /* Set SVG image for hover state */
+            width: 15px;
+            height: 15px;
+        }
+  </style>
+</head>
+<body class="font">
+    <div class="right-align">
+        <div>
+            <a class="nocolor" href="http://">Gmail</a>
+            <a class="nocolor" href="http://">Images</a>
+            <a href="" class="svg-button-app"></a>
+            <a href="" class="svg-button-account"></a>
+        </div>
+    </div>
+    <div class="center">
+        <img src="googlelogo_color_272x92dp.png" alt="Google" height="92">
+    </div>
+    <div class="center"> 
+        <img src="Search icon.svg" width="20" height="20" alt="SVG image">
+        <input type="text" width="582" height="46">
+        <img src="Voice.svg" height="20" alt="SVG image">
+        <img src="Camera.svg" width="20" height="20" alt="SVG image">
+    </div>
+    <div class="center">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+    </div>
+    <div class="center">
+        Google offered in:
+        <a href=""> lietuvių</a>
+    </div>
+    <div class="fixed-bottom">
+        <div class="colored-zone top-zone first-footer-row">
+            Lithuania
+        </div>
+        <div class="colored-zone bottom-zone second-footer-row">
+            <div >
+                <a class="nocolor" href="http://">About</a>
+                <a class="nocolor" href="http://">Advertising</a>
+                <a class="nocolor" href="http://">Business</a>
+                <a class="nocolor" href="http://">How Search works</a>
+            </div>
+            <div>
+                <a class="nocolor" href="http://">Privacy</a>
+                <a class="nocolor" href="http://">Terms</a>
+                <a class="nocolor" href="http://">Settings</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
